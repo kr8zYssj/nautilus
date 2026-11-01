@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Nautilus Hotel</title>
+  <link rel="icon" type="image/svg+xml" href="images/Nautilus 1.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-nautilus sticky-top">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="w-100 d-flex align-items-center justify-content-between navbar-inner-wrapper">
+        <a class="logo-container-vertical m-0" href="index.html">
+          <img src="images/Nautilus 1.svg" alt="Nautilus Icono" class="logo-img-icon">
+          <span class="font-logo fs-5 lh-1 text-gold fw-bold">NAUTILUS</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNautilusContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNautilusContent">
+          <ul class="navbar-nav mx-auto nav-nautilus">
+            <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">QUIÉNES SOMOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurant.html">GASTRONOMÍA</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contactus.html">CONTACTO</a></li>
+          </ul>
+          <a href="reservation.html" class="btn-reservar-glow">RESERVAR<br>AHORA</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <div class="container py-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10 text-center">
+          <h2 class="font-alexandria-light text-navy fs-1 mb-3">Nuestra Ubicación</h2>
+          <p class="text-slate fs-5 mb-4">Visítanos en 11A, Vatomandry, Madagascar y vive una experiencia inigualable frente al océano.</p>
+          <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-lg border border-secondary">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15024.774438515438!2d48.9723224!3d-19.3243128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f513f5698b6711%3A0xa19c11867c2df4fb!2sVatomandry%2C%20Madagascar!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="bg-nautilus-slate p-4 p-md-5">
+            <h2 class="font-alexandria-light text-gold text-center fs-2 mb-4">Envíanos tu Consulta</h2>
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label text-light fs-6">Nombre Completo</label>
+                  <input type="text" class="form-control" required placeholder="Tu nombre completo">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-light fs-6">Correo Electrónico</label>
+                  <input type="email" class="form-control" required placeholder="nombre@correo.com">
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-light fs-6">Asunto</label>
+                  <input type="text" class="form-control" required placeholder="Motivo de tu consulta">
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-light fs-6">Mensaje</label>
+                  <textarea class="form-control" rows="5" required placeholder="Escribe aquí tu consulta o mensaje..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn-reservar-glow px-5 py-3 fs-6">Enviar Consulta</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="contactConfirmationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-nautilus text-center p-4">
+        <div class="modal-body">
+          <div class="mb-3">
+            <img src="images/icono-5.svg" alt="Mensaje Enviado" class="social-svg-icon" style="height: 45px; width: 45px;">
+          </div>
+          <h3 class="font-logo text-gold mb-3 fs-3">¡Consulta Enviada!</h3>
+          <p class="fs-6 text-light mb-4">
+            Gracias por comunicarte con nosotros. Tu mensaje ha sido enviado correctamente y nuestro equipo te responderá a la brevedad.
+          </p>
+          <button type="button" class="btn-reservar-glow px-4 py-2" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="banner-cta py-5 mt-5">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-3 text-center text-lg-start">
+          <div class="logo-container-vertical mb-3 d-inline-flex">
+            <img src="images/Nautilus 1.svg" alt="Nautilus Icono" class="logo-img-icon-footer">
+            <span class="font-logo fs-3 text-gold fw-bold">NAUTILUS</span>
+          </div>
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start mt-2">
+            <img src="images/icono-1.svg" alt="Ubicación" class="social-svg-icon me-2">
+            <span class="text-slate fs-6" style="color: #7A93AC !important;">11A, Vatomandry, Madagascar</span>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h3 class="mb-2 text-light-warm fs-4">Reserva tu habitación ahora</h3>
+          <h3 class="text-light-warm mb-4 fs-4">Vive una experiencia única</h3>
+          <a href="reservation.html" class="btn-reservar-glow">RESERVAR</a>
+        </div>
+        <div class="col-lg-3 text-center text-lg-end">
+          <ul class="vertical-social-list">
+            <li><img src="images/icono-2.svg" class="social-svg-icon"><span>@hotel.nautilus</span></li>
+            <li><img src="images/icono-3.svg" class="social-svg-icon"><span>+54 264 579 2398</span></li>
+            <li><img src="images/icono-4.svg" class="social-svg-icon"><span>hotel_nautilus</span></li>
+            <li><img src="images/icono-5.svg" class="social-svg-icon"><span>nautilushotel@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const modal = new bootstrap.Modal(document.getElementById('contactConfirmationModal'));
+      modal.show();
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>

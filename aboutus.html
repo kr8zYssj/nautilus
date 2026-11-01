@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes Somos - Nautilus Hotel</title>
+  <link rel="icon" type="image/svg+xml" href="images/Nautilus 1.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-nautilus sticky-top">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="w-100 d-flex align-items-center justify-content-between navbar-inner-wrapper">
+        <a class="logo-container-vertical m-0" href="index.html">
+          <img src="images/Nautilus 1.svg" alt="Nautilus Logo" class="logo-img-icon">
+          <span class="font-logo fs-5 lh-1 text-gold fw-bold">NAUTILUS</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNautilusContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNautilusContent">
+          <ul class="navbar-nav mx-auto nav-nautilus">
+            <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link active" href="aboutus.html">QUIÉNES SOMOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurant.html">GASTRONOMÍA</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html">CONTACTO</a></li>
+          </ul>
+          <a href="reservation.html" class="btn-reservar-glow">RESERVAR<br>AHORA</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <div class="container py-5">
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6">
+          <h2 class="font-alexandria-light text-navy fs-1 mb-4">Quiénes Somos</h2>
+          <p class="fs-5 leading-relaxed text-dark">
+            En <strong>Nautilus Hotel</strong>, redefinimos el concepto de descanso de lujo frente al mar. Nacidos con la vocación de ofrecer confort absoluto, nuestras instalaciones combinan arquitectura moderna, atención impecable y la serena majestuosidad del océano.
+          </p>
+          <p class="text-slate fs-6">
+            Cada rincón de nuestro hotel está diseñado para conectar con la tranquilidad, desde nuestras exclusivas áreas de spa y gastronomía marina, hasta actividades acuáticas inolvidables en la costa.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="bg-nautilus-slate p-4 text-center">
+                <h3 class="text-gold mt-2 fs-3">5 Estrellas</h3>
+                <p class="text-light-warm m-0 fs-6">Excelencia Internacional</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="bg-nautilus-slate p-4 text-center">
+                <h3 class="text-gold mt-2 fs-3">Atención 24/7</h3>
+                <p class="text-light-warm m-0 fs-6">Servicio Personalizado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="section-title text-navy mt-4 mb-4">Nuestras Instalaciones</h3>
+      <div id="hotelCarousel" class="carousel slide shadow rounded-3 overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/buceo.png" class="d-block w-100" alt="Experiencia de buceo">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+              <h5 class="font-logo text-gold fs-4">Experiencias Acuáticas</h5>
+              <p class="fs-6">Los mejores expertos te guiarán en una experiencia única de buceo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/gym.png" class="d-block w-100" alt="Gimnasio de alta gama">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+              <h5 class="font-logo text-gold fs-4">Gimnasio de Alta Gama</h5>
+              <p class="fs-6">Nuestro gimnasio de alta gama con pesos calibrados ofrece una experiencia de entrenamiento superior.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/restaurante.png" class="d-block w-100" alt="Restaurante Gourmet">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+              <h5 class="font-logo text-gold fs-4">Restaurante Gourmet</h5>
+              <p class="fs-6">Gastronomía marina internacional a cargo de chefs renombrados.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <footer class="banner-cta py-5 mt-5">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-3 text-center text-lg-start">
+          <div class="logo-container-vertical mb-3 d-inline-flex">
+            <img src="images/Nautilus 1.svg" alt="Nautilus Icono" class="logo-img-icon-footer">
+            <span class="font-logo fs-3 text-gold fw-bold">NAUTILUS</span>
+          </div>
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start mt-2">
+            <img src="images/icono-1.svg" alt="Ubicación" class="social-svg-icon me-2">
+            <span class="text-slate fs-6" style="color: #7A93AC !important;">11A, Vatomandry, Madagascar</span>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h3 class="mb-2 text-light-warm fs-4">Reserva tu habitación ahora</h3>
+          <h3 class="text-light-warm mb-4 fs-4">Vive una experiencia única</h3>
+          <a href="reservation.html" class="btn-reservar-glow">RESERVAR</a>
+        </div>
+        <div class="col-lg-3 text-center text-lg-end">
+          <ul class="vertical-social-list">
+            <li><img src="images/icono-2.svg" class="social-svg-icon"><span>@hotel.nautilus</span></li>
+            <li><img src="images/icono-3.svg" class="social-svg-icon"><span>+54 264 579 2398</span></li>
+            <li><img src="images/icono-4.svg" class="social-svg-icon"><span>hotel_nautilus</span></li>
+            <li><img src="images/icono-5.svg" class="social-svg-icon"><span>nautilushotel@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
